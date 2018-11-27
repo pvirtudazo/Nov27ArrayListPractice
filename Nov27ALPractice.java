@@ -59,6 +59,16 @@ public class Nov27ALPractice
 		}
 		return listc;
 	}
+	public static String printArrayList(ArrayList<Integer> lista)
+	{
+		String list="";
+		for (int i=0;i<lista.size()-1;i++)
+		{
+			list+=lista.get(i)+", ";
+		}
+		list+=lista.get(lista.size()-1);
+		return list;
+	}
 	public static void main(String[] args)
 	{
 		ArrayList<Integer> listx=new ArrayList<>();
@@ -68,5 +78,6 @@ public class Nov27ALPractice
 		for (int i=0;i<11;i++)
 			listy.add(i);
 		System.out.println(listCombination(listx,listy));
+		System.out.println(printArrayList(listCombination(listx,listy)));
 	}
 }
